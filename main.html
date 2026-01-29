@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    body {
+      width: 200px;
+      padding: 20px;
+      font-family: sans-serif;
+      text-align: center;
+    }
+
+    button {
+      padding: 10px 20px;
+      font-size: 16px;
+      cursor: pointer;
+      background-color: #4CAF50;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      box-shadow: 0 5px 3px rgba(0,0,0,0.3);
+    }
+
+    button:hover {
+      background-color: #45a049;
+    }
+    
+    button:active{
+        animation: click 0.3s ease-out 1;
+    }
+
+    @keyframes click{
+        from, to{
+            box-shadow: 0 5px 3px rgba(0,0,0,0.3);
+        }
+        50%{
+            box-shadow: none;
+        }
+    }
+
+  </style>
+</head>
+<body>
+  
+    <h2>Theme Switch</h2>
+
+    <button id="toggleBtn">Toggle</button>
+  
+    <script src="popup.js"></script>
+</body>
+</html>
